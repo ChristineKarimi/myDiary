@@ -1,6 +1,6 @@
 # Mini Diary
 
-#### An application that allows users living their best lives to share their experiences and adventures with their online friends. Keep in touch with their fellow fun loving friends and recommend fun activities or places to other people. 
+An application that allows users living their best lives to share their experiences and adventures with their online friends. Keep in touch with their fellow fun loving friends and recommend fun activities or places to other people. 
 
 #### Built by Chris
 
@@ -17,15 +17,15 @@ This is a web platform for users living their best lives to share their experien
 ## Setup/Installation Requirements
 * Ensure you have python and pip installed beforehand.
 * Clone the project using this command <br/><br/>
-  `https://github.com/ChristineKarimi/miniDiary.git`
+  `https://github.com/ChristineKarimi/miniDiary.git`<br/>
 *  After cloning,navigate into the folder <br/><br/>
-   `cd miniDiary`
+   `cd miniDiary`<br/>
  * Install the virtual environment using the following commands<br/><br/>
-   `python3 -m venv virtual`
+   `python3 -m venv virtual`<br/>
 * Activate virtual environment using the command below<br/><br/>
-    `source virtual/bin/activate`
+    `source virtual/bin/activate`<br/>
 *  Install all the required depedencies in the virtual environment<br/><br/>
-    `python3 -m pip install -r requirements.txt`
+    `python3 -m pip install -r requirements.txt`<br/>
 * Run `$ python manage.py runserver` to serve the application.<br/><br/>
 * The application should work at this point.
 
