@@ -19,7 +19,7 @@ This is a web platform for users living their best lives to share their experien
 * Clone the project using this command <br/><br/>
   `https://github.com/ChristineKarimi/miniDiary.git`<br/><br/>
 *  After cloning,navigate into the folder <br/><br/>
-   `cd miniDiary`<br/>
+   `cd miniDiary`<br/><br/>
  * Install the virtual environment using the following commands<br/><br/>
    `python3 -m venv virtual`<br/><br/>
 * Activate virtual environment using the command below<br/><br/>
