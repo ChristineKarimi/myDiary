@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row business-section">
+
+        <div class="col-md-1"></div>
+        <div class="col-md-10 ">
+            {% for myhood in hood %}
+            <h2 class="text-center">{{myhood.name}}</h2>
+            <hr>
+            <div class="col-md-6 hood-dets view overlay zoom text-center">
+                <img src="{{myhood.hood_image.url}}" alt="Neighborhood" class="img-fluid z-depth-3">
+                <div class="mask flex-center rgba-green-slight">
+                    <p class="white-text">Home is where your heart dwells.</p>
+                </div>
+            </div>
+            {% endfor %}
+            <div><a href="{% url 'newBusiness'%}"><button class="btn btn-outline-success">Add Business</button></a>
+            </div>
+            <div class="business-desc text-center">
+                {%for business in found%}
+                <div>
+                    <span class="text-highlight">
+                        <h2>Businesses</h2>
+                    </span>
+                    <table class="table table-striped w-auto">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Business Name</th>
+                                <th>Email Contact</th>
+                                <th>Description</th>
+                                <th>Neighbor posted</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-info">
+                                <th scope="row">1</th>
+                                <td>{{business.name}}</td>
+                                <td>{{business.business_mail}}</td>
+                                <td>{{business.description}}</td>
+                                <td><cite>{{business.user.username}}</cite></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+
+    </div>
+</div>
+{% endblock %}
