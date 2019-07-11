@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row new-add">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="text-center">
+                <h2>Welcome to the <span class="text-highlight">miniDiary</span>! Keeping each other close.</h2>
+                <p>Please add a profile to get recognized.</p>
+                <a href="{% url 'newNeighbour'%}"><button class="btn btn-outline-success">Edit Profile</button></a>
+            </div>
+
+            {%for profile in profiles%}
+            <div class="profile-details">
+
+                <img src="{{profile.prof_pic.url}}" alt="Profile image" class="img-fluid">
+                <h2>{{profile.name}}</h2>
+                <p>Contact: <em>{{profile.email}}</em></p>
+                <p>Neighborhood: {{profile.neighborhood.name}}</p>
+
+            </div>
+            <div>
+                <a href="{% url 'newBusiness'%}"><button class="btn btn-default">Add Business</button></a>
+            </div>
+            {% endfor %}
+            {%if profile%}
+            {% else %}
+
+            <span class="text-highlight">
+                <h1 class="animated pulse infinite">Be part of a Community Change. What are you waiting for?</h1>
+            </span>
+
+            {% endif %}
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+{% endblock %}
