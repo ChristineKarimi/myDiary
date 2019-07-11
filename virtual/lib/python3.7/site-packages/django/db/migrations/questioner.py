@@ -46,8 +46,7 @@ class MigrationQuestioner(object):
         except ImportError:
             return self.defaults.get("ask_initial", False)
         else:
-            # getattr() needed on PY36 and older (replace with attribute access).
-            if getattr(migrations_module, "__file__", None):
+            if hasattr(migrations_module, "__file__"):
                 filenames = os.listdir(os.path.dirname(migrations_module.__file__))
             elif hasattr(migrations_module, "__path__"):
                 if len(migrations_module.__path__) > 1:

@@ -3,11 +3,7 @@ from django.db.models import CharField, EmailField, TextField
 __all__ = ['CICharField', 'CIEmailField', 'CIText', 'CITextField']
 
 
-class CIText(object):
-
-    def get_internal_type(self):
-        return 'CI' + super(CIText, self).get_internal_type()
-
+class CIText:
     def db_type(self, connection):
         return 'citext'
 

@@ -522,11 +522,13 @@ WHEN (new.%(col_name)s IS NULL)
 
     def _get_sequence_name(self, table):
         name_length = self.max_name_length() - 3
-        return '%s_SQ' % truncate_name(strip_quotes(table), name_length).upper()
+        sequence_name = '%s_SQ' % strip_quotes(table)
+        return truncate_name(sequence_name, name_length).upper()
 
     def _get_trigger_name(self, table):
         name_length = self.max_name_length() - 3
-        return '%s_TR' % truncate_name(strip_quotes(table), name_length).upper()
+        trigger_name = '%s_TR' % strip_quotes(table)
+        return truncate_name(trigger_name, name_length).upper()
 
     def bulk_insert_sql(self, fields, placeholder_rows):
         return " UNION ALL ".join(

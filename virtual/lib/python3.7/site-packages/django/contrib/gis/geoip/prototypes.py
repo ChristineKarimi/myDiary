@@ -4,6 +4,7 @@ from django.contrib.gis.geoip.libgeoip import free, lgeoip
 
 
 # #### GeoIP C Structure definitions ####
+
 class GeoIPRecord(Structure):
     _fields_ = [('country_code', c_char_p),
                 ('country_code3', c_char_p),

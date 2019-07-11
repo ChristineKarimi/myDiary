@@ -355,7 +355,7 @@ class InlineAdminForm(AdminForm):
         # Also search any parents for an auto field. (The pk info is propagated to child
         # models so that does not need to be checked in parents.)
         for parent in self.form._meta.model._meta.get_parent_list():
-            if parent._meta.auto_field or not parent._meta.model._meta.pk.editable:
+            if parent._meta.auto_field:
                 return True
         return False
 

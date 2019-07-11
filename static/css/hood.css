@@ -1,0 +1,73 @@
+body{
+  font-family: 'Rancho', cursive;
+  /* font-family: 'Sawarabi Gothic', sans-serif; */
+  font-size: 1.5em;
+}
+.navbar{
+  font-family: 'Sawarabi Gothic', sans-serif;
+  font-size: 1rem;
+  background-color: white;
+}
+#in,#out,#signup,#home,#hoods-link{
+  text-decoration: none;
+  color: #2f4f4f; 
+}
+#in:hover,#out:hover,#signup:hover,#home:hover,#hoods-link:hover{
+  text-decoration: underline;
+  color: #008000; 
+}
+.auth,.new-add{
+  margin-top: 3%;   
+}
+.formbg{
+  background-image: url('../images/neighborhood.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.auth-form{
+  background-color:  rgba(47,79,79,0.3);
+  color: white;
+}
+#hood-icon a{
+  margin-left: 0px;
+}
+.btn-outline-success{
+  border-radius: 50px;
+}
+.border{
+  border-width: thick 0px 0px 0px;
+}
+.overlay{
+  margin-bottom: 4%;
+}
+#hoods,.animated,.business-section,.search-page{
+  margin-top: 3%;
+}
+.text-highlight{
+  color: #008000;
+}
+.wow {
+  visibility: hidden;
+}
+#find-your-hood{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 3%;
+}
+th,td{
+  font-size: 1.3rem !important;
+}
+.search-title{
+  margin-bottom: 3%;
+  padding: 5%;
+  border: 3px solid green;
+}
+.found{
+  float: left;
+  margin-right: 3%;
+}
+.result-details{
+  background-color:  rgba(47,79,79,0.3);
+  padding: 3%;
+}

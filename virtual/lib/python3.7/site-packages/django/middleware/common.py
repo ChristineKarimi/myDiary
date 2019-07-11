@@ -11,7 +11,6 @@ from django.utils.cache import (
 )
 from django.utils.deprecation import MiddlewareMixin, RemovedInDjango21Warning
 from django.utils.encoding import force_text
-from django.utils.http import escape_leading_slashes
 from django.utils.six.moves.urllib.parse import urlparse
 
 
@@ -91,8 +90,6 @@ class CommonMiddleware(MiddlewareMixin):
         POST, PUT, or PATCH.
         """
         new_path = request.get_full_path(force_append_slash=True)
-        # Prevent construction of scheme relative urls.
-        new_path = escape_leading_slashes(new_path)
         if settings.DEBUG and request.method in ('POST', 'PUT', 'PATCH'):
             raise RuntimeError(
                 "You called this URL via %(method)s, but the URL doesn't end "
