@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row search-page">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            {% if businesses %}
+            <div class="text-center search-title">
+                <h2> Found {{businesses|length}} results of searched {{message}}. </h2>
+            </div>
+            {% else %}
+            <h2> Found 0 business with that name, {{message}}. </h2>
+            {% endif %}
+
+            <div class="row">
+                {% if businesses %}
+                {% for business in businesses %}
+                <div class="col-sm-12 col-md-10">
+                    <div class="found ">
+                        <h2>{{business.neighborhood.name}}</h2>
+                        <img src="{{business.neighborhood.hood_image.url}}" alt="" class="img-fluid">
+                    </div>
+                    <div class="result-details">
+                        <p style="text-decoration:underline">{{business.name}}</p>
+                        <p>{{business.description}}</p>
+                    </div>
+
+                </div>
+                {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+{% endblock %}
