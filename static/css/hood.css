@@ -3,10 +3,15 @@ body{
   /* font-family: 'Sawarabi Gothic', sans-serif; */
   font-size: 1.5em;
 }
+
+#hoods-link {
+    color: palevioletred;
+    font-style: italic;
+}
 .navbar{
   font-family: 'Sawarabi Gothic', sans-serif;
   font-size: 1rem;
-  background-color: white;
+  background-color: palevioletred;
 }
 #in,#out,#signup,#home,#hoods-link{
   text-decoration: none;
@@ -14,7 +19,7 @@ body{
 }
 #in:hover,#out:hover,#signup:hover,#home:hover,#hoods-link:hover{
   text-decoration: underline;
-  color: #008000; 
+  color: palevioletred; 
 }
 .auth,.new-add{
   margin-top: 3%;   
@@ -26,7 +31,7 @@ body{
   background-repeat: no-repeat;
 }
 .auth-form{
-  background-color:  rgba(47,79,79,0.3);
+  background-color:  palevioletred;
   color: white;
 }
 #hood-icon a{
@@ -45,7 +50,7 @@ body{
   margin-top: 3%;
 }
 .text-highlight{
-  color: #008000;
+  color: palevioletred;
 }
 .wow {
   visibility: hidden;
@@ -61,13 +66,13 @@ th,td{
 .search-title{
   margin-bottom: 3%;
   padding: 5%;
-  border: 3px solid green;
+  border: 3px solid palevioletred;
 }
 .found{
   float: left;
   margin-right: 3%;
 }
 .result-details{
-  background-color:  rgba(47,79,79,0.3);
+  background-color:  palevioletred;
   padding: 3%;
 }

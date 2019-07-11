@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'bootstrap4',
     'diary.apps.DiaryConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -78,7 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'diary',
-        'USER': 'postgres',
+        'USER': 'air',
         'PASSWORD':'ck',
     }
 }

@@ -17,42 +17,42 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <div class="view">
-                            <img src="../static/images/grill-day.jpeg" alt="First slide" class="img-fluid"
+                            <img src="/static/images/1.jpg" alt="First slide" class="img-fluid"
                                 height="450px">
                             <div class="mask rgba-black-light"></div>
                         </div>
                         <div class="carousel-caption">
-                            <h3 class="h3-responsive">The get togethers!</h3>
-                            <p>Always feels home</p>
+                            <h3 class="h3-responsive">The best thing about memories is making them.</h3>
+                            <p>Share your journey</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <!--Mask color-->
                         <div class="view">
-                            <img src="/static/images/estate-streets.jpeg" alt="Second slide" class="img-fluid"
+                            <img src="/static/images/2.jpg" alt="Second slide" class="img-fluid"
                                 height="450px">
                             <div class="mask rgba-black-light"></div>
                         </div>
                         <div class="carousel-caption">
-                            <h3 class="h3-responsive">Some construction coming up in the hood.</h3>
-                            <p>Always feels home</p>
+                            <h3 class="h3-responsive">All about that cool vacation you had.</h3>
+                            <p>Share your journey</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <!--Mask color-->
                         <div class="view">
-                            <img src="/static/images/sunset.jpg" alt="Second slide" class="img-fluid" height="450px">
+                            <img src="/static/images/3.jpg" alt="Second slide" class="img-fluid" height="450px">
                             <div class="mask rgba-black-light"></div>
                         </div>
                         <div class="carousel-caption">
                             <h3 class="h3-responsive">Cherished moments can't be forgotten</h3>
-                            <p>Always feels home</p>
+                            <p>Share your journey</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <!--Mask color-->
                         <div class="view">
-                            <img src="/static/images/weekend-chill.jpeg" alt="Third slide" class="img-fluid"
+                            <img src="/static/images/4.jpeg" alt="Third slide" class="img-fluid"
                                 height="450px">
                             <div class="mask rgba-black-slight"></div>
                         </div>
@@ -78,8 +78,8 @@
         </div>
     </div>
     <div class="text-center" id="hoods">
-        <h2 class="text-center">Neighbor - Hoods</h2>
-        <a href="{%url 'newHood'%}"><button class="btn btn-outline-success">Add Neighborhood</button></a>
+        <h2 class="text-center">Welcome to mini Diary!</h2>
+        <a href="{%url 'newHood'%}"><button class="btn btn-outline-success">Tell your story</button></a>
     </div>
     <div class="container-fluid row">
         <div id="find-your-hood">
@@ -90,13 +90,13 @@
                     <img src="{{hood.hood_image.url}}" alt="Hood" class="img-fluid wow zoomInUp">
                     <a href="/accounts/register/">
                         <div class="mask flex-center rgba-green-light">
-                            <p class="white-text">Join Neighborhood</p>
+                            <p class="white-text">View story</p>
                         </div>
                     </a>
                 </div>
                 <p>{{hood.name}}</p>
                 <a href="{%url 'hood-details' neighborhood_id=hood.id%}"><button class="btn btn-default">View
-                        Businesses</button></a>
+                        posts</button></a>
             </div>
             {% endfor %}
 
