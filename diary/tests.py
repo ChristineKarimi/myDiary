@@ -1,58 +1,27 @@
 from django.test import TestCase
-
+from .models import Neighborhood,NeighborProfile,Business
 # Create your tests here.
 
-from django.db import models
-from django.contrib.auth.models import User
-from tinymce.models import HTMLField
-# Create your models here.
+class HoodTestClass(TestCase):
+  def setUp(self):    
+    
+    self.parklands = Neighborhood(name='Parklands',hood_image='parklands.jpg',members='5')
+    self.parklands.save()
+    
+    self.jem = NeighborProfile(name='Jemila',email='njemila.306@gmail.com',prof_pic='Beauty.jpeg',user=self.jem,neighborhood=self.parklands)
+    self.jem.save()
 
-class Neighborhood(models.Model):
-  name=models.CharField(max_length=50)
-  hood_image=models.ImageField(upload_to='hood/',default='city.jpeg')
-  members=models.IntegerField()
+    self.gym = Business(description ='Spacious and well aerated. Full of energy and good vibes',name='Everything Check',business_mail='every.check@gym.com',user=self.jem,neighborhood=self.parklands)
+    self.gym.save()
+    
+  #Testing instance
+  def test_instance(self):
+    self.assertTrue(isinstance(self.gym,Business))
+    self.assertTrue(isinstance(self.jem,NeighborProfile))
+    self.assertTrue(isinstance(self.parklands,Neighborhood))
 
-  def __str__(self):
-    return self.name
-  def save_hood(self):
-    self.save()
-  def delete_hood(self):
-    self.delete()
-
-  @classmethod
-  def view_neigborhood(cls,neighborhood_id):
-    hood=cls.objects.filter(id=neighborhood_id)
-    return hood
-
-class NeighborProfile(models.Model):
-  name=models.CharField(max_length=60)
-  user=models.ForeignKey(User,on_delete=models.CASCADE)
-  neighborhood=models.ForeignKey(Neighborhood,on_delete=models.CASCADE)
-  email=models.CharField(max_length=100)
-  prof_pic=models.ImageField(upload_to='profiles/',default='avatar.png')
-
-  def __str__(self):
-    return self.name
-  def save_neighbour(self):
-    self.save()
-  def delete_neighbour(self):
-    self.delete()
-
-class Business(models.Model):
-  name=models.CharField(max_length=50)
-  user=models.ForeignKey(User,on_delete=models.CASCADE)
-  neighborhood=models.ForeignKey(Neighborhood,on_delete=models.CASCADE)
-  description=HTMLField()
-  business_mail=models.CharField(max_length=100)
-
-  def __str__(self):
-    return self.name
-  def save_business(self):
-    self.save()
-  def delete_business(self):
-    self.delete()
-
-  @classmethod
-  def search_business(cls,search_name):
-    results = cls.objects.filter(name__icontains=search_name)
-    return results
+  #Destroying the instance after test
+  def tearDown(self):
+    Business.object.all().delete()
+    NeighborProfile.object.all().delete()
+    Neighborhood.object.all().delete()
