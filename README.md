@@ -10,9 +10,9 @@ View live site: coming soon
 This is a web platform for users living their best lives to share their experiences and adventures with their online friends. Users create an account to join a community and can share of any memorable experience they might have been part of. Users can also reccomend certain activities to other people by sharing images and posting reviews. 
 
 ## App
-![Landing Page]()
-![Shared memories page]()
-![Profile Page]()
+![Landing Page](images/one.png)
+![Sign Up](images/two.png)
+![Shared memories page/profile](images/three.png)
 
 ## Setup/Installation Requirements
 * Ensure you have python and pip installed beforehand.
@@ -44,8 +44,9 @@ Some of the features are still under development and will be constantly updated.
 ## Technologies Used
 The application is built on:
 * Python3
-* Ajax
+* Javascript/Jquery/Ajax
 * Bootstrap 4
+* MDB Bootstrap
 * Django 1.11 framework
 * Postgresql 
 
@@ -67,11 +68,5 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-*THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.*
+
 Copyright (c) 2019 **christine Karimi**
