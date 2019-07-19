@@ -1,4 +1,5 @@
 ## Table of contents
+1. [My first title](#my-first-title)
 *  [AppName] (#Mini Diary)
 *  [Author] (Author: Chris)
 *  [Description] (## Description)
