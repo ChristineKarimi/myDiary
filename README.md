@@ -1,16 +1,15 @@
 ## Table of contents
-1. [My first title](#my-first-title)
-*  [AppName] (#Mini Diary)
-*  [Author] (Author: Chris)
-*  [Description] (## Description)
-*  [Screenshots] (### App)
-*  [SetUp] (## Setup/Installation)
-*  [Installation] (## Requirements)
-*  [BDD] (## Behavior Driven Development (BDD))
-*  [Bugs] (### Known Bugs)
-*  [TechnologiesUsed]( ## Technologies Used)
-*  [Supportandcontactdetails] (## Support and contact details)
-*  [License](## License)
+*  [AppName](#Mini-Diary)
+*  [Author](##Author-Chris)
+*  [Description](##App-Description)
+*  [Screenshots](###App-screenshots)
+*  [SetUp](##Setup-Installation)
+*  [Installation](##App-Requirements)
+*  [BDD](##Behavior-Driven-Development)
+*  [Bugs](###Known-Bugs)
+*  [TechnologiesUsed]( ##Technologies-Used)
+*  [Supportandcontactdetails](##Support-and-contact-details)
+*  [License](##App-License)
 
 # Mini Diary
 
