@@ -1,33 +1,61 @@
+## Table of contents
+* [AppName](#Mini Diary)
+* [Author](Author: Chris)
+* [Description](## Description)
+* [Screenshots](### App)
+* [SetUp](## Setup/Installation)
+* [Installation](## Requirements)
+* [BDD](## Behavior Driven Development (BDD))
+* [Bugs](### Known Bugs)
+* [TechnologiesUsed](## Technologies Used)
+* [Supportandcontactdetails](## Support and contact details)
+* [License](## License)
+
 # Mini Diary
 
 An application that allows users living their best lives to share their experiences and adventures with their online friends. Keep in touch with their fellow fun loving friends and recommend fun activities or places to other people. 
 
-#### Built by Chris
+#### Author: Chris
 
 ## Description
 View live site: coming soon
 
 This is a web platform for users living their best lives to share their experiences and adventures with their online friends. Users create an account to join a community and can share of any memorable experience they might have been part of. Users can also reccomend certain activities to other people by sharing images and posting reviews. 
 
-## App
+## App  
+### Landing page
 ![Landing Page](static/images/one.png) 
+
+### Sign up page
 ![Sign Up](static/images/two.png)
+
+### User profile page
 ![Shared memories page/profile](static/images/three.png)
 
-## Setup/Installation Requirements
+## Setup/Installation 
+
+## Setup
+To run this project, install it locally using the following commands:
 * Ensure you have python and pip installed beforehand.
-* Clone the project using this command <br/><br/>
-  `https://github.com/ChristineKarimi/miniDiary.git`<br/><br/>
-*  After cloning,navigate into the folder <br/><br/>
-   `cd miniDiary`<br/><br/>
- * Install the virtual environment using the following commands<br/><br/>
-   `python3 -m venv virtual`<br/><br/>
-* Activate virtual environment using the command below<br/><br/>
-    `source virtual/bin/activate`<br/><br/>
-*  Install all the required depedencies in the virtual environment<br/><br/>
-    `python3 -m pip install -r requirements.txt`<br/><br/>
-* Run `$ python manage.py runserver` to serve the application.<br/><br/>
+
+```
+$ git clone https://github.com/ChristineKarimi/miniDiary.git
+$ cd miniDiary
+$ python3 -m venv virtual
+$ source virtual/bin/activate
+$ python3 -m pip install -r requirements.txt
+$ python manage.py runserver
+```
+
 * The application should work at this point.
+
+## Requirements
+
+Use the package manager [pip](https://pip.readthedocs.io/en/1.1/requirements.html) to install all depedencies.
+
+```bash
+python3 -m pip install -r requirements.txt`
+```
 
 ## Behavior Driven Development (BDD)
 | Behavior | Input    | Output   |
@@ -53,20 +81,7 @@ The application is built on:
 ## Support and contact details
 For any queries and suggestions, please contact the support team via **Email: karimikim3@gmail.com**
 
-### License
-*MIT License*
-
-*Copyright (c) [2019] [CHRIS]*
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
 Copyright (c) 2019 **christine Karimi**
