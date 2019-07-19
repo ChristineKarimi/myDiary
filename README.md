@@ -10,7 +10,7 @@ View live site: coming soon
 This is a web platform for users living their best lives to share their experiences and adventures with their online friends. Users create an account to join a community and can share of any memorable experience they might have been part of. Users can also reccomend certain activities to other people by sharing images and posting reviews. 
 
 ## App
-![Landing Page](images/one.png) 
+![Landing Page](static/images/one.png) 
 ![Sign Up](images/two.png)
 ![Shared memories page/profile](images/three.png)
 
