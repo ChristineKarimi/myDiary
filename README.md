@@ -11,8 +11,8 @@ This is a web platform for users living their best lives to share their experien
 
 ## App
 ![Landing Page](static/images/one.png) 
-![Sign Up](images/two.png)
-![Shared memories page/profile](images/three.png)
+![Sign Up](static/images/two.png)
+![Shared memories page/profile](static/images/three.png)
 
 ## Setup/Installation Requirements
 * Ensure you have python and pip installed beforehand.
