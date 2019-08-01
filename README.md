@@ -13,7 +13,7 @@
 
 # Mini Diary
 
-An application that allows users living their best lives to share their experiences and adventures with their online friends. Keep in touch with their fellow fun loving friends and recommend fun activities or places to other people. 
+An application that allows users living their best lives to share their experiences and adventures with their online friends keep in touch with their fellow fun loving friends and recommend fun activities or places to other people. 
 
 #### Author: Chris
 
@@ -21,6 +21,21 @@ An application that allows users living their best lives to share their experien
 View live site: coming soon
 
 This is a web platform for users living their best lives to share their experiences and adventures with their online friends. Users create an account to join a community and can share of any memorable experience they might have been part of. Users can also reccomend certain activities to other people by sharing images and posting reviews. 
+
+## Application Structure
+#### Folders:
+
+* ~ diaryApp- this is the main application.
+* ~ Static - holds any content that can be delivered to an end user without having to be generated, modified, or processed.
+* ~ Media - holds all images uploaded to the application by the user.
+* ~ Templates - it holds HTML files with variables and other programming constructs.
+* ~ Virtual - helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them.
+
+#### Files:
+
+* ~ manage.py - responsible for running commands and starting the development server
+* ~ requirements.txt - hold the result from pip freeze for the purpose of achieving repeatable installations.
+
 
 ## App  
 ### Landing page
@@ -57,6 +72,16 @@ Use the package manager [pip](https://pip.readthedocs.io/en/1.1/requirements.htm
 python3 -m pip install -r requirements.txt`
 ```
 
+## Prepare environmet variables
+For this project you will need the following configurations, inside an environment file that is to be ignored.
+```
+SECRET_KEY= #secret key will be added by default
+DB_NAME, DB_USER, DB_PASSWORD, DB_HOST #for local db
+DEBUG= #set to false in production
+MODE= # dev or prod , set to prod during production
+ALLOWED_HOSTS='.localhost', '.herokuapp.com', '.127.0.0.1'
+```
+
 ## Behavior Driven Development (BDD)
 | Behavior | Input    | Output   |
 | :------------- | :------------- | :------------- |
@@ -80,6 +105,10 @@ The application is built on:
 
 ## Support and contact details
 For any queries and suggestions, please contact the support team via **Email: karimikim3@gmail.com**
+
+## TODO
+[x] Add review functionality for each entry.
+[x] Improve on the design.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
