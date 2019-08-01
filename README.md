@@ -25,16 +25,16 @@ This is a web platform for users living their best lives to share their experien
 ## Application Structure
 #### Folders:
 
-* ~ diaryApp- this is the main application.
-* ~ Static - holds any content that can be delivered to an end user without having to be generated, modified, or processed.
-* ~ Media - holds all images uploaded to the application by the user.
-* ~ Templates - it holds HTML files with variables and other programming constructs.
-* ~ Virtual - helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them.
+~ diaryApp- this is the main application.
+~ Static - holds any content that can be delivered to an end user without having to be generated, modified, or processed.
+~ Media - holds all images uploaded to the application by the user.
+~ Templates - it holds HTML files with variables and other programming constructs.
+~ Virtual - helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them.
 
 #### Files:
 
-* ~ manage.py - responsible for running commands and starting the development server
-* ~ requirements.txt - hold the result from pip freeze for the purpose of achieving repeatable installations.
+~ manage.py - responsible for running commands and starting the development server
+~ requirements.txt - hold the result from pip freeze for the purpose of achieving repeatable installations.
 
 
 ## App  
@@ -75,11 +75,11 @@ python3 -m pip install -r requirements.txt`
 ## Prepare environmet variables
 For this project you will need the following configurations, inside an environment file that is to be ignored.
 ```
-SECRET_KEY= #secret key will be added by default
-DB_NAME, DB_USER, DB_PASSWORD, DB_HOST #for local db
-DEBUG= #set to false in production
-MODE= # dev or prod , set to prod during production
-ALLOWED_HOSTS='.localhost', '.herokuapp.com', '.127.0.0.1'
+![#1589F0]SECRET_KEY= #secret key will be added by default
+![#1589F0]DB_NAME, DB_USER, DB_PASSWORD, DB_HOST #for local db
+![#1589F0]DEBUG= #set to false in production
+![#1589F0]MODE= # dev or prod , set to prod during production
+![#1589F0]ALLOWED_HOSTS='.localhost', '.herokuapp.com', '.127.0.0.1'
 ```
 
 ## Behavior Driven Development (BDD)
@@ -107,8 +107,8 @@ The application is built on:
 For any queries and suggestions, please contact the support team via **Email: karimikim3@gmail.com**
 
 ## TODO
-[x] Add review functionality for each entry.
-[x] Improve on the design.
+[ ] Add review functionality for each entry.<br>
+[ ] Improve on the design.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
