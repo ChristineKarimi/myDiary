@@ -74,13 +74,19 @@ python3 -m pip install -r requirements.txt`
 
 ## Prepare environmet variables
 For this project you will need the following configurations, inside an environment file that is to be ignored.
+
+```python
+#just an example, dont share your .env settings
+SECRET_KEY='342s(s(!hsjd998sde8$=o4$3m!(o+kce2^97kp6#ujhi'
+DEBUG=True #set to false in production
+DB_NAME='diary'
+DB_USER='air'
+DB_PASSWORD='ck'
+DB_HOST='127.0.0.1'
+MODE='dev' #set to 'prod' in production
+ALLOWED_HOSTS='.localhost', '.herokuapp.com', '.127.0.0.1'
 ```
-![#1589F0]SECRET_KEY= #secret key will be added by default
-![#1589F0]DB_NAME, DB_USER, DB_PASSWORD, DB_HOST #for local db
-![#1589F0]DEBUG= #set to false in production
-![#1589F0]MODE= # dev or prod , set to prod during production
-![#1589F0]ALLOWED_HOSTS='.localhost', '.herokuapp.com', '.127.0.0.1'
-```
+
 
 ## Behavior Driven Development (BDD)
 | Behavior | Input    | Output   |
@@ -107,8 +113,8 @@ The application is built on:
 For any queries and suggestions, please contact the support team via **Email: karimikim3@gmail.com**
 
 ## TODO
-[ ] Add review functionality for each entry.<br>
-[ ] Improve on the design.
+- [ ]Add review functionality for each entry.<br>
+- [ ]mprove on the design.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
