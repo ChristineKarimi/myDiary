@@ -76,12 +76,11 @@ python3 -m pip install -r requirements.txt`
 For this project you will need the following configurations, inside an environment file that is to be ignored.
 
 ```python
-#just an example, dont share your .env settings
-SECRET_KEY='342s(s(!hsjd998sde8$=o4$3m!(o+kce2^97kp6#ujhi'
+SECRET_KEY=''
 DEBUG=True #set to false in production
-DB_NAME='diary'
-DB_USER='air'
-DB_PASSWORD='ck'
+DB_NAME='' # your db username
+DB_USER='' # your user
+DB_PASSWORD='' #your db password
 DB_HOST='127.0.0.1'
 MODE='dev' #set to 'prod' in production
 ALLOWED_HOSTS='.localhost', '.herokuapp.com', '.127.0.0.1'
