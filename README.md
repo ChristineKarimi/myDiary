@@ -25,15 +25,15 @@ This is a web platform for users living their best lives to share their experien
 ## Application Structure
 #### Folders:
 
-~ diaryApp- this is the main application.
-~ Static - holds any content that can be delivered to an end user without having to be generated, modified, or processed.
-~ Media - holds all images uploaded to the application by the user.
-~ Templates - it holds HTML files with variables and other programming constructs.
+~ diaryApp- this is the main application. <br>
+~ Static - holds any content that can be delivered to an end user without having to be generated, modified, or processed.<br>
+~ Media - holds all images uploaded to the application by the user.<br>
+~ Templates - it holds HTML files with variables and other programming constructs.<br>
 ~ Virtual - helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them.
 
 #### Files:
 
-~ manage.py - responsible for running commands and starting the development server
+~ manage.py - responsible for running commands and starting the development server<br>
 ~ requirements.txt - hold the result from pip freeze for the purpose of achieving repeatable installations.
 
 
