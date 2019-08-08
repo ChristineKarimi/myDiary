@@ -18,7 +18,7 @@ class Neighborhood(models.Model):
 
   @classmethod
   def view_neigborhood(cls,neighborhood_id):
-    hood=cls.objects.filter(id=neighborhood_id)
+    hood=cls.objects.filter(id=neighborhood_id) 
     return hood
 
 class NeighborProfile(models.Model):
