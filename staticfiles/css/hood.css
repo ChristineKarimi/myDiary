@@ -19,13 +19,12 @@ body{
 }
 #in:hover,#out:hover,#signup:hover,#home:hover,#hoods-link:hover{
   text-decoration: underline;
-  color: palevioletred; 
+  color: black; 
 }
 .auth,.new-add{
   margin-top: 3%;   
 }
 .formbg{
-  background-image: url('../images/neighborhood.png');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
