@@ -6,10 +6,9 @@ from django.conf.urls.static import static
 urlpatterns=[
   url(r'^$',views.home,name='home'),
   url(r'^accounts/',include('registration.backends.simple.urls')),
-  url(r'^hood/(?P<neighborhood_id>[0-9])$',views.hoods,name='hood-details'),
-  url(r'^new/neighborhood$',views.new_hood,name='newHood'),
-  url(r'^new/neighbour$',views.new_neighbour,name='newNeighbour'),
-  url(r'^new/business$',views.new_business,name='newBusiness'),
+  url(r'^diaryposts/(?P<neighborhood_id>[0-9])$',views.hoods,name='hood-details'),
+  url(r'^new/diary$',views.new_hood,name='newHood'),
+  url(r'^new/diarystory$',views.new_business,name='newBusiness'),
   url(r'^profile/',views.user_profile,name='userProfile'),
   url(r'^search/',views.search_business,name='search'),
 ]
