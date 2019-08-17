@@ -38,7 +38,7 @@ class NeighborProfile(models.Model):
 class Business(models.Model):
   name=models.CharField(max_length=50)
   user=models.ForeignKey(User,on_delete=models.CASCADE)
-  Category=models.ForeignKey(Neighborhood,on_delete=models.CASCADE)
+  category=models.ForeignKey(Neighborhood,on_delete=models.CASCADE)
   your_story=HTMLField()
   business_mail=models.CharField(max_length=100, default='kim@gmail.com')
 
