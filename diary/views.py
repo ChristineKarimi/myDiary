@@ -8,7 +8,7 @@ from .forms import NewHoodForm,NewProfileForm,NewBusinessForm
 
 def home(request):
   hoods=Neighborhood.objects.all()
-  title = 'DiaryApp'
+  title = 'My Diary'
   return render(request,'home.html',{"title":title,"hoods":hoods})
 
 @login_required(login_url='/accounts/login')

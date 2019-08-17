@@ -88,7 +88,7 @@
             <div class="col-md-4 hood-section text-center">
                 <div class="view overlay z-depth-5">
                     <img src="{{hood.hood_image.url}}" alt="Hood" class="img-fluid wow zoomInUp">
-                    <a href="/accounts/register/">
+                    <a href="{%url 'hood-details' neighborhood_id=hood.id%}">
                         <div class="mask flex-center rgba-green-light">
                             <p class="white-text">View story</p>
                         </div>

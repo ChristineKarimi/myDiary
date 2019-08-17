@@ -18,7 +18,7 @@ class Neighborhood(models.Model):
 
   @classmethod
   def view_neigborhood(cls,neighborhood_id):
-    hood=cls.objects.filter(id=neighborhood_id) 
+    hood=cls.objects.filter(id=neighborhood_id)
     return hood
 
 class NeighborProfile(models.Model):
@@ -40,7 +40,6 @@ class Business(models.Model):
   user=models.ForeignKey(User,on_delete=models.CASCADE)
   neighborhood=models.ForeignKey(Neighborhood,on_delete=models.CASCADE)
   description=HTMLField()
-  business_mail=models.CharField(max_length=100)
 
   def __str__(self):
     return self.name
@@ -53,4 +52,3 @@ class Business(models.Model):
   def search_business(cls,search_name):
     results = cls.objects.filter(name__icontains=search_name)
     return results
-
