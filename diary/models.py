@@ -5,9 +5,9 @@ from django.contrib.auth.models import User
 from tinymce.models import HTMLField
 
 class Neighborhood(models.Model):
-  name=models.CharField(max_length=50)
-  hood_image=models.ImageField(upload_to='hood/',default='city.jpeg')
-  members=models.IntegerField()
+  Category=models.CharField(max_length=50)
+  diary_image=models.ImageField(upload_to='hood/',default='city.jpeg')
+  entries=models.IntegerField()
 
   def __str__(self):
     return self.name
@@ -38,8 +38,8 @@ class NeighborProfile(models.Model):
 class Business(models.Model):
   name=models.CharField(max_length=50)
   user=models.ForeignKey(User,on_delete=models.CASCADE)
-  neighborhood=models.ForeignKey(Neighborhood,on_delete=models.CASCADE)
-  description=HTMLField()
+  Category=models.ForeignKey(Neighborhood,on_delete=models.CASCADE)
+  your_story=HTMLField()
   business_mail=models.CharField(max_length=100, default='kim@gmail.com')
 
   def __str__(self):
