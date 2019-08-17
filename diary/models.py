@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from tinymce.models import HTMLField
 
 class Neighborhood(models.Model):
-  category=models.CharField(max_length=50)
+  category=models.CharField(max_length=50, default='Bike riding')
   diary_image=models.ImageField(upload_to='hood/',default='city.jpeg')
   entries=models.IntegerField()
 
