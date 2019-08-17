@@ -40,7 +40,7 @@ class Business(models.Model):
   user=models.ForeignKey(User,on_delete=models.CASCADE)
   category=models.ForeignKey(Neighborhood,on_delete=models.CASCADE)
   your_story=HTMLField()
-  business_mail=models.CharField(max_length=100, default='kim@gmail.com')
+  contact=models.CharField(max_length=100, default='kim@gmail.com')
 
   def __str__(self):
     return self.name
