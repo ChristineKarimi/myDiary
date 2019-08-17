@@ -10,7 +10,7 @@ class Neighborhood(models.Model):
   entries=models.IntegerField()
 
   def __str__(self):
-    return self.name
+    return self.category
   def save_hood(self):
     self.save()
   def delete_hood(self):
