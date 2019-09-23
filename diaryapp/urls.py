@@ -21,6 +21,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'',include('diary.urls')),
     url(r'^accounts/',include('registration.backends.simple.urls')),
+    url(r'^oauth/', include('social_django.urls', namespace='social')),  # <--Add this line
+
     url(r'^tinymce/', include('tinymce.urls')),
     url(r'^logout/$', views.logout, {"next_page": '/'}), 
 ]
